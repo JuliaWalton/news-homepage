@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+  <!-- fix this main tag should not be within header -->
+  <main>
+    <header>
+      <img src="assets/images/logo.svg" class="logo" alt="homepage" width="64" height="40">
+      <button id="sidebar-toggle" class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <aside id="nav" class="nav desktop-nav">
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul>
+          <li class="header__link">
+            <a href="#">Home</a>
+          </li>
+          <li class="header__link">
+            <a href="#">New</a>
+          </li>
+          <li class="header__link">
+            <a href="#">Popular</a>
+          </li>
+          <li class="header__link">
+            <a href="#">Trending</a>
+          </li>
+          <li class="header__link">
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+      </aside>
+    </header>
+
+    <article class="wrapper grid">
+
+      <section class="feature">
+        <picture>
+          <source 
+            media="(min-width: 800px)"
+            srcset="assets/images/image-web-3-desktop.jpg 1x,
+            assets/images/image-web-3-desktop.jpg 2x" 
+            width="730"
+            height="300">
+          <img 
+            class="feature__image" 
+            width="330"
+            height="300"
+            src="assets/images/image-web-3-mobile.jpg" 
+            alt="assortment of colorful puzzle pieces">
+        </picture>
+        <h1 class="feature__headline">
+          The Bright Future of Web 3.0?
+        </h1>
+        <div>
+          <p class="feature__description">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+          </p>
+          <a class="feature__button">
+            Read more
+          </a>
+        </div>
+      </section>
+
+      <section class="new">
+        <h2 class="new__title">New</h2>
+        <article class="new__post">
+          <h3 class="new__headline">Hydrogen VS Electric Cars</h3>
+          <p class="new__description">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <article class="new__post">
+          <h3 class="new__headline">The Downsides of AI Artistry</h3>
+          <p class="new__description">
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+        </article>
+        <article class="new__post">
+          <h3 class="new__headline">Is VC Funding Drying Up?</h3>
+          <p class="new__description">
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </article>
+      </section>
+
+      <section class="blog">
+        <article class="blog__item">
+          <img src="assets/images/image-retro-pcs.jpg" class="blog__image" alt="">
+          <div class="blog__text">
+            <div class="blog__number">01</div>
+            <h3 class="blog__headline">Reviving Retro PCs</h3>
+            <p class="blog__description">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        <article class="blog__item">
+          <!-- <div class="img__container"> -->
+            <img src="assets/images/image-top-laptops.jpg" class="blog__image" alt="">
+          <!-- </div> -->
+          <div class="blog__text">
+            <div class="blog__number">02</div>
+            <h3 class="blog__headline">Top 10 Laptops of 2022</h3>
+            <p class="blog__description">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+        <article class="blog__item">
+          <img src="assets/images/image-gaming-growth.jpg" class="blog__image" alt="">
+          <div class="blog__text">
+            <div class="blog__number">03</div>
+            <h3 class="blog__headline">The Growth of Gaming</h3>
+            <p class="blog__description">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+
+    </article>
+    <script src="script.js"></script>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+.feature {
+    display: grid;
+    gap: 1rem;
+}
+
+.feature__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+picture {
+    object-fit: cover;
+}
+
+.feature__headline {
+    color: var(--clr-neutral-dk-blue);
+}
+
+.feature__button {
+    background-color: var(--clr-primary-red);
+    color: var(--clr-neutral-white);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    display: block;
+    width: fit-content;
+    // justify-self: start;
+    // align-self: center;
+}

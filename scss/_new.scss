@@ -1,0 +1,30 @@
+.new {
+    background-color: var(--clr-neutral-dk-blue);
+    color: var(--clr-neutral-white);
+    padding: 1.5rem 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.new__title {
+    color: var(--clr-primary-orange);
+    font-size: clamp(1.75rem, 2.5vw, 3rem);
+}
+
+.new__headline {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+}
+
+.new__description {
+    color: var(--clr-neutral-grey-blue);
+}
+
+.new__description {
+    margin-bottom: 1rem; 
+}
+
+.new__post:not(:last-child) {
+    border-bottom: 1px solid var(--clr-neutral-grey-blue);
+    padding-block: .75rem; 
+}
