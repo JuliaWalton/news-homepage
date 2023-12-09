@@ -5,20 +5,15 @@ header {
 }
 
 .nav {
-    // display: none;
     position: fixed;
-    background-color: pink;
+    color: white;
+    background-color: rgb(0, 0, 0);
     right: 0;
     top: 0;
-    // padding: 1rem 3rem 3rem;
     display: grid;
     grid-template-rows: auto 1fr;
-    // width: 30%;
     height: 100%;
     transform: translate(100%);
-    // flex-direction: row-reverse;
-    // align-items: start;
-    // transition: .3s ease-in;
 }
 
 .show-nav {
@@ -52,14 +47,14 @@ header {
     background: none;
     border: none;
     font-size: 1.25rem;
-    // padding: 1rem;
     margin: 1rem;
     align-self: start;
     justify-self: end;
+    color: white;
 }
 
 ul {
-    padding: 1rem 6rem 3rem 3rem;
+    padding: 1rem 10rem 3rem 3rem;
 }
 
 a {
